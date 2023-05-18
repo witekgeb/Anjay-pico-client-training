@@ -1,0 +1,12 @@
+{
+	"build": { "dockerfile": "Dockerfile" },
+	"image": "mcr.microsoft.com/devcontainers/universal:2",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"ms-vscode.cpptools-extension-pack",
+				"ms-azuretools.vscode-docker"
+			]
+		}
+	}
+}
