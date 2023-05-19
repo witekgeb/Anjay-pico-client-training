@@ -1,6 +1,5 @@
 {
 	"build": { "dockerfile": "Dockerfile" },
-	"image": "mcr.microsoft.com/devcontainers/universal:2",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -8,5 +7,6 @@
 				"ms-azuretools.vscode-docker"
 			]
 		}
-	}
+	},
+	"postCreateCommand": "bash ./.devcontainer/proj_init.sh"
 }
