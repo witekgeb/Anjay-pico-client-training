@@ -1,12 +1,16 @@
 {
-	"build": { "dockerfile": "Dockerfile" },
-	"customizations": {
-		"vscode": {
-			"extensions": [
-				"ms-vscode.cpptools-extension-pack",
-				"ms-azuretools.vscode-docker"
-			]
-		}
-	},
-	"postCreateCommand": "bash ./.devcontainer/proj_init.sh"
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "settings": {
+                "extensions.ignoreRecommendations": true
+            },
+            "extensions": [
+                "ms-vscode.cpptools-extension-pack"
+            ]
+        }
+    },
+    "postCreateCommand": ".devcontainer/proj_init.sh"
 }
